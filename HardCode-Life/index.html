@@ -1,56 +1,81 @@
-<!DOCTYPE html>
-<html lang = "en">
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HardCode Life — Dev Journal</title>
+  <meta name="description" content="HardCode Life — Dev journal, patch notes, and project updates." />
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>HardCode Life</title>
-		<link rel="stylesheet" href="style.css">
-		
-	</head>
-	
-	<body>
-		<header>
-			<h1>HardCode Life</h1>
-			<p style="
-			text-align: center; 
-			margin-top: -30px;">
-				I code. I art. I game.
-			</p>
-		</header>
-		
-		<img src="IMAGES/main_logo.png" alt="first screenshot - 13/04/2025" style="width:200px; height:auto; margin-left: 100px;">
-		
-		<main>
-			<section>
-				<h2 style="
-				color: #bc6200">
-					Why this site exists
-				</h2>
-				<p>this site houses my passion project - Until We Fall - and makes it known to anyone who would bother to look.</p>
-			</section>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img class="brand__logo" src="images/brand_logo.png" alt="HardCode Life" />
+      <div class="brand__tagline">I code. I art. I game.</div>
+    </div>
+
+    <nav class="nav">
+      <a class="nav__link nav__link--active" href="#">Dev Journal</a>
+      <a class="nav__link" href="#until-we-fall">UNTIL WE FALL</a>
+      <a class="nav__link" href="#resources">Resources</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <article class="post post--compact" aria-label="Dev log post">
+      <div class="post__frame">
+
+        <!-- 1) Header slice -->
+        <div class="post__cap post__cap--top">
+          <div class="post__header">
+            <div class="post__date">26 February 2026</div>
+            <div class="post__meta">Thursday · 22:00</div>
 			
-			<section>
-				<h2>Why dev?</h2>
-				<p>the common goonsumerism enjoyer wonders, "Why bother? What's so special about it? People make apps everyday - it's nothing new 🤷‍"
-				
-				<br>
-				<br>
-				bro I'm not making a candy crush clone 😭 This aint a get-rich-quick scheme. Money is just a happy bonus. I'm trying to make something substantial here - GOD WILLING!</p>
-				<br>
-				<br>
-				
-				<ul>
-					<li><b>“People write books every day”</b> = guess Tolkien should’ve stayed home</li>
-					<li><b>“People make games every day”</b> = RIP Dwarf Fortress, I guess</li>
-					<li><b>“People build houses every day”</b> = why bother with cathedrals 🤷</li>
-				</ul>
-			</section>
-		</main>
-		
-		<footer>
-			<p>© 2026 Me. Built with 90% spite, 10% self-loathing, and zero magic.</p>
-		</footer>
-	</body>
+			<div class ="post__title">Current status update~</div>
+          </div>
+        </div>
 
+        <!-- 2) Stretchy middle slice -->
+        <div class="post__mid">
+		
+          <div class="post__content">
+            <p>  
+			  This DEVLOG is under construction :) 
+            </p>
+			
+			<img src="images/warning.png" alt="Warning" style="text-align: center; opacity: 0.5;filter: saturate(.85) contrast(.95);"/>
+
+            <h3>For now: active Development</h3>
+            <ul>
+              <li>focusing on building UNTIL WE FALL</li>
+              <li>will change status once the game reaches Alpha</li>
+              <li>after the Alpha release, the game will become downloadable on this site (solely, for now)</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 3) Footer slice -->
+        <div class="post__cap post__cap--bot">
+          <div class="post__footer">
+            <div class="post__footer-left">
+              <span class="pill">#devlog</span>
+              <span class="pill">#untilwefall</span>
+            </div>
+
+            <div class="post__footer-right">
+              <a class="iconlink" href="#" aria-label="Share">Share</a>
+              <a class="iconlink" href="#" aria-label="Permalink">Permalink</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div>© 2026 HARDCODE LIFE. Built with 90% spite, 10% self-loathing, and zero magic.</div>
+  </footer>
+</body>
 </html>
