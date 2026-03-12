@@ -253,6 +253,15 @@ letter-spacing: 5px;}
   margin: 0 0 14px;
 }
 
+.foot__img {
+	width: 100%;
+	position: relative;
+}
+.foot__body {
+	position: absolute;
+	margin-top: -64px;
+}
+
 .post__foot{
   display:flex;
   align-items:center;
