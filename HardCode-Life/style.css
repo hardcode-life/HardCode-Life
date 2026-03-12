@@ -134,9 +134,11 @@ body{
 .content {
 	flex: 1;
 	max-width: var(--wrap-max);
-	margin:0 0;
+	margin:0 auto;
 	width: 100%;
-	padding:28px 16px;
+	padding:16px 16px;
+	align-items: center;
+  justify-content: center;
 }
 
 .site-header{
@@ -171,6 +173,12 @@ letter-spacing: 5px;}
 	letter-spacing: .3px;
 }
 
+.nav__arrow {
+	margin: auto auto; 
+	Height:25px; 
+	float: left;
+	}
+	
 .nav{
 	display:flex;
 	gap: 14px;
@@ -285,7 +293,7 @@ letter-spacing: 5px;}
   overflow-y: hidden;
   white-space: pre;
   -webkit-overflow-scrolling: touch;
-  max-width: none;     /* explicitly none */
+  max-width: 100%;     /* explicitly none */
 }
 
 .frame__content code{
@@ -312,6 +320,7 @@ letter-spacing: 5px;}
   overflow-wrap: break-word;
   max-width: none;     /* explicitly none */
   opacity: 30%;
+  text-align: center;
 }
 
 /* phone */
@@ -397,17 +406,26 @@ font-size: 12px;
 		letter-spacing: .3px;
 	}
 	
+	.nav__arrow {
+	float: left;	
+	margin: auto auto; 
+	Height:10px;
+	}
+	
 	.nav {
-		flex-direction: column;   /* THIS is the key */
+		/*flex-direction: column;*/   /* THIS is the key */
 		align-items: flex-end;    /* keeps them right-aligned */
 		gap: 10px;
-		padding-right: 64px;
+		padding-right: 0px;
 	}
 	
 	.nav__link {
-		width: fit-content;
+		display: flex;
+		justify-content: flex-end;
+		width: 120px;
 		font-size: 14px;
 		padding: 5px 8px;
+		text-align: right;
 	}
 	
 	.frame__content{
@@ -434,6 +452,7 @@ font-size: 12px;
 	  overflow-y: hidden;
 	  white-space: pre;          /* never wrap */
 	  -webkit-overflow-scrolling: touch;
+	  
 	}
 
 	.frame__content code{
