@@ -1,4 +1,4 @@
-## Hi there 👋
+## I code. I art. I game.
 
 <!--
 **hardcode-life/HardCode-Life** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
